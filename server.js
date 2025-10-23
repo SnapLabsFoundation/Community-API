@@ -1,4 +1,4 @@
-const { createProject, updateProject, accessMetadata, updateMetadata } = require('./projects');
+const { createProject, updateProject, accessMetadata, updateMetadata } = require('./src/projects/index');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
