@@ -1,4 +1,3 @@
-require('dotenv').config();
 const { query } = require('../../database/sql/config.js');
 
 module.exports = async function verifySession(req, res, username) {
