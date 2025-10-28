@@ -6,13 +6,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-app.use(cors(
-    {
-        origin: '*',
-        methods: ['GET', 'POST', 'PUT', 'DELETE'],
-        allowedHeaders: ['Content-Type', 'Authorization']
-    }
-));
+app.use(cors({ origin: '*', methods: ['GET', 'POST', 'PUT'] }));
 
 app.use(bodyParser.json());
 app.use('/', createProject);
