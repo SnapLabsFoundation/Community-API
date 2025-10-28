@@ -13,6 +13,10 @@ app.use('/', updateMetadata);
 app.use('/', createUser);
 app.use('/', accessUser);
 
+app.get('/', (req, res) => {
+    return res.json({ "message": "SnapLabs API Online" });
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
